@@ -1,0 +1,27 @@
+#! /bin/bash
+
+k=1
+
+for seek in RR RS WR WS;
+do
+	for size in 100000 1000000 10000000;
+	do
+        for thread in 1 2 4;
+        do
+        touch disk$k.slurm
+        echo "#! /bin/bash " >> disk$k.slurm
+
+        echo " " >> disk$k.slurm
+        echo "#SBATCH --nodes=1" >> disk$k.slurm
+        echo "#SBATCH --output="$seek$thread$size".out" >> disk$k.slurm
+        echo "#SBATCH --wait-all-nodes=1" >> disk$k.slurm
+        echo " " >> disk$k.slurm
+        echo " echo \$SLURM_JOB_NODELIST" >> disk$k.slurm
+
+        echo " " >> disk$k.slurm
+        echo "./MyDiskBench /$(pwd)/disk-"$seek"-"$size"-"$thread"thread.dat /$(pwd)/output/disk-RR-1thread.out.dat" >> disk$k.slurm
+        k=$((k+1))
+        done
+	done 
+done
+

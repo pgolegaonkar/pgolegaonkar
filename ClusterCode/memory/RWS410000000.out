@@ -1,0 +1,15 @@
+redcompute-1
+
+
+
+Sequential write execution time: 0.558978
+Latency: 0.000056 microseconds 
+Theoretical Latency: 0.014000 microseconds 
+
+Sequential write execution time: 0.596499
+Latency: 0.000060 microseconds 
+Theoretical Latency: 0.014000 microseconds 
+
+Sequential write execution time: 0.517976
+Latency: 0.000052 microseconds 
+Theoretical Latency: 0.014000 microseconds 
