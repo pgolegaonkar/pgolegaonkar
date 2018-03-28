@@ -1,0 +1,19 @@
+Connecting to host 127.0.0.1, port 4000
+[  4] local 127.0.0.1 port 58636 connected to 127.0.0.1 port 4000
+[ ID] Interval           Transfer     Bandwidth       Total Datagrams
+[  4]   0.00-1.00   sec  1.40 GBytes  12.0 Gbits/sec  183390  
+[  4]   1.00-2.00   sec  1.43 GBytes  12.3 Gbits/sec  187340  
+[  4]   2.00-3.00   sec  1.45 GBytes  12.5 Gbits/sec  189990  
+[  4]   3.00-4.00   sec  1.44 GBytes  12.4 Gbits/sec  188820  
+[  4]   4.00-5.00   sec  1.45 GBytes  12.5 Gbits/sec  190300  
+[  4]   5.00-6.00   sec  1.42 GBytes  12.2 Gbits/sec  185630  
+[  4]   6.00-7.00   sec  1.42 GBytes  12.2 Gbits/sec  185580  
+[  4]   7.00-8.00   sec  1.40 GBytes  12.0 Gbits/sec  183430  
+[  4]   8.00-9.00   sec  1.55 GBytes  13.3 Gbits/sec  202770  
+[  4]   9.00-10.00  sec  1.42 GBytes  12.2 Gbits/sec  186390  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  4]   0.00-10.00  sec  14.4 GBytes  12.3 Gbits/sec  0.004 ms  7799/1883640 (0.41%)  
+[  4] Sent 1883640 datagrams
+
+iperf Done.

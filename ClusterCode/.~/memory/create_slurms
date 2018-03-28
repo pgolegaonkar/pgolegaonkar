@@ -1,0 +1,27 @@
+#! /bin/bash
+
+k=1
+
+for seek in RWR RWS;
+do
+	for size in 1 1000 1000000 10000000
+	do
+		for qw in 1 2 4;
+		do
+
+		touch config$k.slurm
+		echo "#! /bin/bash " >> config$k.slurm
+
+		echo " " >> config$k.slurm
+		echo "#SBATCH --nodes=1" >> config$k.slurm
+		echo "#SBATCH --output="$seek$qw".out" >> config$k.slurm
+		echo "#SBATCH --wait-all-nodes=1" >> config$k.slurm
+		echo " " >> config$k.slurm
+		echo " echo \$SLURM_JOB_NODELIST" >> config$k.slurm
+
+		echo " " >> config$k.slurm
+		echo "./MyRAMBenchmark /$(pwd)/memory-"$seek"-"$size"-"$qw"thread.dat /$(pwd)/memory-RWR-1-1thread.out.dat" >> config$k.slurm
+		k=$((k+1))
+		done
+	done
+done

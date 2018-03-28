@@ -1,0 +1,2 @@
+redcompute-8
+/var/spool/slurmd/job08215/slurm_script: line 9: ./MyRAMBenchmark: No such file or directory

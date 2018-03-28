@@ -1,0 +1,27 @@
+#! /bin/bash
+
+k=25
+
+for seek in RWR RWS;
+do
+	for size in 1 
+	do
+		for qw in 1 2 4;
+		do
+
+		touch memory$k.slurm
+		echo "#! /bin/bash " >> memory$k.slurm
+
+		echo " " >> memory$k.slurm
+		echo "#SBATCH --nodes=1" >> memory$k.slurm
+		echo "#SBATCH --output="$seek$qw$size".out" >> memory$k.slurm
+		echo "#SBATCH --wait-all-nodes=1" >> memory$k.slurm
+		echo " " >> memory$k.slurm
+		echo " echo \$SLURM_JOB_NODELIST" >> memory$k.slurm
+
+		echo " " >> memory$k.slurm
+		echo "./MyRAMBench /$(pwd)/memory-"$seek"-"$size"-"$qw"thread.dat /$(pwd)/output/memory-latency-1thread.out.dat" >> memory$k.slurm
+		k=$((k+1))
+		done
+	done
+done

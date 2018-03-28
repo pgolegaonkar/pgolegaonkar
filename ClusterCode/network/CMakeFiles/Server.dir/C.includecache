@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/exports/home/pgolegaonkar/network/ClientServer.c
+ClientServer.h
+/exports/home/pgolegaonkar/network/ClientServer.h
+
+/exports/home/pgolegaonkar/network/ClientServer.h
+stdio.h
+-
+string.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+sys/time.h
+-
+sys/resource.h
+-
+time.h
+-
+unistd.h
+-
+netdb.h
+-
+
+/exports/home/pgolegaonkar/network/Server.c
+stdio.h
+-
+ClientServer.h
+/exports/home/pgolegaonkar/network/ClientServer.h
+

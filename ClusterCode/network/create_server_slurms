@@ -1,0 +1,28 @@
+#! /bin/bash
+
+k=1
+port=4000
+
+
+for seek in TCP UDP ;
+do
+	for size in 1 1000 32000
+	do
+		for qw in 1 2 4 8;
+		do
+			touch configServer$k.slurm
+			echo "#! /bin/bash " >> configServer$k.slurm
+			echo " " >> configServer$k.slurm
+			echo "#SBATCH --nodes=1" >> configServer$k.slurm
+			echo "#SBATCH --output=server"$k".out" >> configServer$k.slurm
+			echo "#SBATCH --wait-all-nodes=1" >> configServer$k.slurm
+			echo " " >> configServer$k.slurm
+			echo " echo \$SLURM_JOB_NODELIST" >> configServer$k.slurm
+
+			echo " " >> configServer$k.slurm
+			echo "./Server /$(pwd)/network-"$seek"-"$size"-"$qw"thread.dat /$(pwd)/output/network-TCP-1-1thread.out.dat "$port" 127.0.0.1" >> configServer$k.slurm
+			k=$((k+1))
+        		port=$((port+1))
+		done
+	done
+done

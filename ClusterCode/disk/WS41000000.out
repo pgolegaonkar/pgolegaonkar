@@ -1,0 +1,2 @@
+greencompute-20
+/var/spool/slurmd/job14150/slurm_script: line 9: 22606 Segmentation fault      (core dumped) ./MyDiskBench //exports/home/pgolegaonkar/disk/disk-WS-1000000-4thread.dat //exports/home/pgolegaonkar/disk/output/disk-RR-1thread.out.dat
