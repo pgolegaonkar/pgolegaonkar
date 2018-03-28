@@ -1,0 +1,813 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.429 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa.
+
+	Run began: Sun Mar 25 16:31:55 2018
+
+	Excel chart generation enabled
+	Record Size 1 kB
+	File size set to 10240 kB
+	Command line used: iozone -R -l 1 -u 8 -r 1k -s 10m
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+	Min process = 1 
+	Max process = 8 
+	Throughput test with 1 process
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  1 initial writers 	=  700466.62 kB/sec
+	Parent sees throughput for  1 initial writers 	=  223825.84 kB/sec
+	Min throughput per process 			=  700466.62 kB/sec 
+	Max throughput per process 			=  700466.62 kB/sec
+	Avg throughput per process 			=  700466.62 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  1 rewriters 	=  660471.50 kB/sec
+	Parent sees throughput for  1 rewriters 	=  220409.80 kB/sec
+	Min throughput per process 			=  660471.50 kB/sec 
+	Max throughput per process 			=  660471.50 kB/sec
+	Avg throughput per process 			=  660471.50 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  1 readers 		=  993887.81 kB/sec
+	Parent sees throughput for  1 readers 		=  551812.58 kB/sec
+	Min throughput per process 			=  993887.81 kB/sec 
+	Max throughput per process 			=  993887.81 kB/sec
+	Avg throughput per process 			=  993887.81 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 re-readers 	=  920623.62 kB/sec
+	Parent sees throughput for 1 re-readers 	=  557579.37 kB/sec
+	Min throughput per process 			=  920623.62 kB/sec 
+	Max throughput per process 			=  920623.62 kB/sec
+	Avg throughput per process 			=  920623.62 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 reverse readers 	=  665156.25 kB/sec
+	Parent sees throughput for 1 reverse readers 	=  458884.59 kB/sec
+	Min throughput per process 			=  665156.25 kB/sec 
+	Max throughput per process 			=  665156.25 kB/sec
+	Avg throughput per process 			=  665156.25 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 stride readers 	=  292286.38 kB/sec
+	Parent sees throughput for 1 stride readers 	=  241748.25 kB/sec
+	Min throughput per process 			=  292286.38 kB/sec 
+	Max throughput per process 			=  292286.38 kB/sec
+	Avg throughput per process 			=  292286.38 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 random readers 	=  609926.31 kB/sec
+	Parent sees throughput for 1 random readers 	=  433752.69 kB/sec
+	Min throughput per process 			=  609926.31 kB/sec 
+	Max throughput per process 			=  609926.31 kB/sec
+	Avg throughput per process 			=  609926.31 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 mixed workload 	=  699018.75 kB/sec
+	Parent sees throughput for 1 mixed workload 	=  466622.09 kB/sec
+	Min throughput per process 			=  699018.75 kB/sec 
+	Max throughput per process 			=  699018.75 kB/sec
+	Avg throughput per process 			=  699018.75 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 random writers 	=  501368.94 kB/sec
+	Parent sees throughput for 1 random writers 	=  166887.00 kB/sec
+	Min throughput per process 			=  501368.94 kB/sec 
+	Max throughput per process 			=  501368.94 kB/sec
+	Avg throughput per process 			=  501368.94 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 pwrite writers 	=  578393.75 kB/sec
+	Parent sees throughput for 1 pwrite writers 	=  167216.42 kB/sec
+	Min throughput per process 			=  578393.75 kB/sec 
+	Max throughput per process 			=  578393.75 kB/sec
+	Avg throughput per process 			=  578393.75 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for 1 pread readers 	=  969347.81 kB/sec
+	Parent sees throughput for 1 pread readers 	=  557102.03 kB/sec
+	Min throughput per process 			=  969347.81 kB/sec 
+	Max throughput per process 			=  969347.81 kB/sec
+	Avg throughput per process 			=  969347.81 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  1 fwriters 	=  287012.69 kB/sec
+	Parent sees throughput for  1 fwriters 		=  169270.60 kB/sec
+	Min throughput per process 			=  287012.69 kB/sec 
+	Max throughput per process 			=  287012.69 kB/sec
+	Avg throughput per process 			=  287012.69 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  1 freaders 	=  881456.44 kB/sec
+	Parent sees throughput for  1 freaders 		=  852196.24 kB/sec
+	Min throughput per process 			=  881456.44 kB/sec 
+	Max throughput per process 			=  881456.44 kB/sec
+	Avg throughput per process 			=  881456.44 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  2 initial writers 	=  823776.44 kB/sec
+	Parent sees throughput for  2 initial writers 	=  235883.04 kB/sec
+	Min throughput per process 			=  402204.44 kB/sec 
+	Max throughput per process 			=  421572.00 kB/sec
+	Avg throughput per process 			=  411888.22 kB/sec
+	Min xfer 					=    9778.00 kB
+
+	Children see throughput for  2 rewriters 	= 1229442.12 kB/sec
+	Parent sees throughput for  2 rewriters 	=  314997.70 kB/sec
+	Min throughput per process 			=  614349.56 kB/sec 
+	Max throughput per process 			=  615092.56 kB/sec
+	Avg throughput per process 			=  614721.06 kB/sec
+	Min xfer 					=   10232.00 kB
+
+	Children see throughput for  2 readers 		= 2084116.31 kB/sec
+	Parent sees throughput for  2 readers 		= 1136520.78 kB/sec
+	Min throughput per process 			= 1039742.38 kB/sec 
+	Max throughput per process 			= 1044373.94 kB/sec
+	Avg throughput per process 			= 1042058.16 kB/sec
+	Min xfer 					=   10205.00 kB
+
+	Children see throughput for 2 re-readers 	= 1826548.50 kB/sec
+	Parent sees throughput for 2 re-readers 	= 1136437.07 kB/sec
+	Min throughput per process 			=  910695.31 kB/sec 
+	Max throughput per process 			=  915853.19 kB/sec
+	Avg throughput per process 			=  913274.25 kB/sec
+	Min xfer 					=   10168.00 kB
+
+	Children see throughput for 2 reverse readers 	= 1385309.12 kB/sec
+	Parent sees throughput for 2 reverse readers 	=  943107.32 kB/sec
+	Min throughput per process 			=  691641.69 kB/sec 
+	Max throughput per process 			=  693667.44 kB/sec
+	Avg throughput per process 			=  692654.56 kB/sec
+	Min xfer 					=   10219.00 kB
+
+	Children see throughput for 2 stride readers 	= 1413574.81 kB/sec
+	Parent sees throughput for 2 stride readers 	=  953579.59 kB/sec
+	Min throughput per process 			=  705859.75 kB/sec 
+	Max throughput per process 			=  707715.06 kB/sec
+	Avg throughput per process 			=  706787.41 kB/sec
+	Min xfer 					=   10197.00 kB
+
+	Children see throughput for 2 random readers 	= 1279141.62 kB/sec
+	Parent sees throughput for 2 random readers 	=  899082.41 kB/sec
+	Min throughput per process 			=  638763.19 kB/sec 
+	Max throughput per process 			=  640378.44 kB/sec
+	Avg throughput per process 			=  639570.81 kB/sec
+	Min xfer 					=   10232.00 kB
+
+	Children see throughput for 2 mixed workload 	= 1174102.59 kB/sec
+	Parent sees throughput for 2 mixed workload 	=  306267.60 kB/sec
+	Min throughput per process 			=  491210.66 kB/sec 
+	Max throughput per process 			=  682891.94 kB/sec
+	Avg throughput per process 			=  587051.30 kB/sec
+	Min xfer 					=    7345.00 kB
+
+	Children see throughput for 2 random writers 	=  982278.34 kB/sec
+	Parent sees throughput for 2 random writers 	=  277682.61 kB/sec
+	Min throughput per process 			=  490468.31 kB/sec 
+	Max throughput per process 			=  491810.03 kB/sec
+	Avg throughput per process 			=  491139.17 kB/sec
+	Min xfer 					=   10213.00 kB
+
+	Children see throughput for 2 pwrite writers 	= 1001986.09 kB/sec
+	Parent sees throughput for 2 pwrite writers 	=  247349.59 kB/sec
+	Min throughput per process 			=  500001.88 kB/sec 
+	Max throughput per process 			=  501984.22 kB/sec
+	Avg throughput per process 			=  500993.05 kB/sec
+	Min xfer 					=   10224.00 kB
+
+	Children see throughput for 2 pread readers 	= 2177204.12 kB/sec
+	Parent sees throughput for 2 pread readers 	= 1183270.35 kB/sec
+	Min throughput per process 			= 1087603.25 kB/sec 
+	Max throughput per process 			= 1089600.88 kB/sec
+	Avg throughput per process 			= 1088602.06 kB/sec
+	Min xfer 					=   10194.00 kB
+
+	Children see throughput for  2 fwriters 	= 1159880.25 kB/sec
+	Parent sees throughput for  2 fwriters 		=  278426.80 kB/sec
+	Min throughput per process 			=  579908.81 kB/sec 
+	Max throughput per process 			=  579971.44 kB/sec
+	Avg throughput per process 			=  579940.12 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  2 freaders 	= 1805769.25 kB/sec
+	Parent sees throughput for  2 freaders 		= 1748487.33 kB/sec
+	Min throughput per process 			=  900227.38 kB/sec 
+	Max throughput per process 			=  905541.88 kB/sec
+	Avg throughput per process 			=  902884.62 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  3 initial writers 	= 1322342.53 kB/sec
+	Parent sees throughput for  3 initial writers 	=  349770.88 kB/sec
+	Min throughput per process 			=  433449.59 kB/sec 
+	Max throughput per process 			=  446909.19 kB/sec
+	Avg throughput per process 			=  440780.84 kB/sec
+	Min xfer 					=    9913.00 kB
+
+	Children see throughput for  3 rewriters 	= 1685038.69 kB/sec
+	Parent sees throughput for  3 rewriters 	=  332101.35 kB/sec
+	Min throughput per process 			=  559123.94 kB/sec 
+	Max throughput per process 			=  566717.00 kB/sec
+	Avg throughput per process 			=  561679.56 kB/sec
+	Min xfer 					=   10104.00 kB
+
+	Children see throughput for  3 readers 		= 2949586.00 kB/sec
+	Parent sees throughput for  3 readers 		= 1606281.89 kB/sec
+	Min throughput per process 			=  981488.81 kB/sec 
+	Max throughput per process 			=  985082.81 kB/sec
+	Avg throughput per process 			=  983195.33 kB/sec
+	Min xfer 					=   10233.00 kB
+
+	Children see throughput for 3 re-readers 	= 2773007.38 kB/sec
+	Parent sees throughput for 3 re-readers 	= 1725701.17 kB/sec
+	Min throughput per process 			=  924191.00 kB/sec 
+	Max throughput per process 			=  924448.00 kB/sec
+	Avg throughput per process 			=  924335.79 kB/sec
+	Min xfer 					=   10203.00 kB
+
+	Children see throughput for 3 reverse readers 	= 2094222.06 kB/sec
+	Parent sees throughput for 3 reverse readers 	= 1430441.25 kB/sec
+	Min throughput per process 			=  697936.69 kB/sec 
+	Max throughput per process 			=  698302.75 kB/sec
+	Avg throughput per process 			=  698074.02 kB/sec
+	Min xfer 					=   10213.00 kB
+
+	Children see throughput for 3 stride readers 	= 3159844.88 kB/sec
+	Parent sees throughput for 3 stride readers 	= 3016675.27 kB/sec
+	Min throughput per process 			= 1045406.75 kB/sec 
+	Max throughput per process 			= 1058739.38 kB/sec
+	Avg throughput per process 			= 1053281.62 kB/sec
+	Min xfer 					=   10127.00 kB
+
+	Children see throughput for 3 random readers 	= 1955257.62 kB/sec
+	Parent sees throughput for 3 random readers 	= 1307626.73 kB/sec
+	Min throughput per process 			=  649169.06 kB/sec 
+	Max throughput per process 			=  654104.38 kB/sec
+	Avg throughput per process 			=  651752.54 kB/sec
+	Min xfer 					=   10168.00 kB
+
+	Children see throughput for 3 mixed workload 	= 2794301.88 kB/sec
+	Parent sees throughput for 3 mixed workload 	=  537612.57 kB/sec
+	Min throughput per process 			=  749381.25 kB/sec 
+	Max throughput per process 			= 1062905.38 kB/sec
+	Avg throughput per process 			=  931433.96 kB/sec
+	Min xfer 					=    7254.00 kB
+
+	Children see throughput for 3 random writers 	= 1482707.44 kB/sec
+	Parent sees throughput for 3 random writers 	=  331340.75 kB/sec
+	Min throughput per process 			=  492572.34 kB/sec 
+	Max throughput per process 			=  495498.03 kB/sec
+	Avg throughput per process 			=  494235.81 kB/sec
+	Min xfer 					=   10184.00 kB
+
+	Children see throughput for 3 pwrite writers 	=  755068.12 kB/sec
+	Parent sees throughput for 3 pwrite writers 	=  232935.80 kB/sec
+	Min throughput per process 			=  250228.56 kB/sec 
+	Max throughput per process 			=  252430.22 kB/sec
+	Avg throughput per process 			=  251689.38 kB/sec
+	Min xfer 					=   10139.00 kB
+
+	Children see throughput for 3 pread readers 	= 2755184.56 kB/sec
+	Parent sees throughput for 3 pread readers 	= 1549196.73 kB/sec
+	Min throughput per process 			=  910930.62 kB/sec 
+	Max throughput per process 			=  925105.06 kB/sec
+	Avg throughput per process 			=  918394.85 kB/sec
+	Min xfer 					=   10145.00 kB
+
+	Children see throughput for  3 fwriters 	= 1491856.19 kB/sec
+	Parent sees throughput for  3 fwriters 		=  352467.53 kB/sec
+	Min throughput per process 			=  469468.16 kB/sec 
+	Max throughput per process 			=  550977.25 kB/sec
+	Avg throughput per process 			=  497285.40 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  3 freaders 	= 4596274.88 kB/sec
+	Parent sees throughput for  3 freaders 		= 4271360.10 kB/sec
+	Min throughput per process 			= 1474221.12 kB/sec 
+	Max throughput per process 			= 1570785.12 kB/sec
+	Avg throughput per process 			= 1532091.62 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  4 initial writers 	= 1701412.00 kB/sec
+	Parent sees throughput for  4 initial writers 	=  255656.58 kB/sec
+	Min throughput per process 			=  373594.88 kB/sec 
+	Max throughput per process 			=  480030.47 kB/sec
+	Avg throughput per process 			=  425353.00 kB/sec
+	Min xfer 					=    7977.00 kB
+
+	Children see throughput for  4 rewriters 	= 1078119.69 kB/sec
+	Parent sees throughput for  4 rewriters 	=  271834.16 kB/sec
+	Min throughput per process 			=  265026.56 kB/sec 
+	Max throughput per process 			=  273547.69 kB/sec
+	Avg throughput per process 			=  269529.92 kB/sec
+	Min xfer 					=    9925.00 kB
+
+	Children see throughput for  4 readers 		= 1969357.44 kB/sec
+	Parent sees throughput for  4 readers 		= 1371356.21 kB/sec
+	Min throughput per process 			=  471513.12 kB/sec 
+	Max throughput per process 			=  502183.78 kB/sec
+	Avg throughput per process 			=  492339.36 kB/sec
+	Min xfer 					=    9592.00 kB
+
+	Children see throughput for 4 re-readers 	= 3581187.50 kB/sec
+	Parent sees throughput for 4 re-readers 	= 2124660.50 kB/sec
+	Min throughput per process 			=  887795.94 kB/sec 
+	Max throughput per process 			=  900378.38 kB/sec
+	Avg throughput per process 			=  895296.88 kB/sec
+	Min xfer 					=   10135.00 kB
+
+	Children see throughput for 4 reverse readers 	= 2575859.56 kB/sec
+	Parent sees throughput for 4 reverse readers 	= 1673074.91 kB/sec
+	Min throughput per process 			=  587933.56 kB/sec 
+	Max throughput per process 			=  700261.00 kB/sec
+	Avg throughput per process 			=  643964.89 kB/sec
+	Min xfer 					=    8612.00 kB
+
+	Children see throughput for 4 stride readers 	= 2777654.31 kB/sec
+	Parent sees throughput for 4 stride readers 	= 1809145.99 kB/sec
+	Min throughput per process 			=  692708.88 kB/sec 
+	Max throughput per process 			=  697452.31 kB/sec
+	Avg throughput per process 			=  694413.58 kB/sec
+	Min xfer 					=   10172.00 kB
+
+	Children see throughput for 4 random readers 	=  818606.19 kB/sec
+	Parent sees throughput for 4 random readers 	=  651720.96 kB/sec
+	Min throughput per process 			=  188865.58 kB/sec 
+	Max throughput per process 			=  214483.80 kB/sec
+	Avg throughput per process 			=  204651.55 kB/sec
+	Min xfer 					=    7523.00 kB
+
+	Children see throughput for 4 mixed workload 	= 3020589.56 kB/sec
+	Parent sees throughput for 4 mixed workload 	=  437256.77 kB/sec
+	Min throughput per process 			=  559429.38 kB/sec 
+	Max throughput per process 			=  953170.44 kB/sec
+	Avg throughput per process 			=  755147.39 kB/sec
+	Min xfer 					=    6002.00 kB
+
+	Children see throughput for 4 random writers 	= 1051901.00 kB/sec
+	Parent sees throughput for 4 random writers 	=  310186.81 kB/sec
+	Min throughput per process 			=  261620.06 kB/sec 
+	Max throughput per process 			=  263972.97 kB/sec
+	Avg throughput per process 			=  262975.25 kB/sec
+	Min xfer 					=   10137.00 kB
+
+	Children see throughput for 4 pwrite writers 	= 1207376.00 kB/sec
+	Parent sees throughput for 4 pwrite writers 	=  282007.84 kB/sec
+	Min throughput per process 			=  269620.16 kB/sec 
+	Max throughput per process 			=  342109.06 kB/sec
+	Avg throughput per process 			=  301844.00 kB/sec
+	Min xfer 					=    8063.00 kB
+
+	Children see throughput for 4 pread readers 	= 5101290.50 kB/sec
+	Parent sees throughput for 4 pread readers 	= 4104302.52 kB/sec
+	Min throughput per process 			= 1149852.00 kB/sec 
+	Max throughput per process 			= 1323073.75 kB/sec
+	Avg throughput per process 			= 1275322.62 kB/sec
+	Min xfer 					=    8916.00 kB
+
+	Children see throughput for  4 fwriters 	= 1383324.22 kB/sec
+	Parent sees throughput for  4 fwriters 		=  336357.75 kB/sec
+	Min throughput per process 			=  338701.66 kB/sec 
+	Max throughput per process 			=  353161.56 kB/sec
+	Avg throughput per process 			=  345831.05 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  4 freaders 	= 1809449.12 kB/sec
+	Parent sees throughput for  4 freaders 		= 1674846.14 kB/sec
+	Min throughput per process 			=  427875.91 kB/sec 
+	Max throughput per process 			=  479805.25 kB/sec
+	Avg throughput per process 			=  452362.28 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  5 initial writers 	= 1865573.47 kB/sec
+	Parent sees throughput for  5 initial writers 	=  303859.61 kB/sec
+	Min throughput per process 			=  323922.97 kB/sec 
+	Max throughput per process 			=  411443.41 kB/sec
+	Avg throughput per process 			=  373114.69 kB/sec
+	Min xfer 					=    8056.00 kB
+
+	Children see throughput for  5 rewriters 	= 1340938.61 kB/sec
+	Parent sees throughput for  5 rewriters 	=  295006.06 kB/sec
+	Min throughput per process 			=  257607.31 kB/sec 
+	Max throughput per process 			=  302654.72 kB/sec
+	Avg throughput per process 			=  268187.72 kB/sec
+	Min xfer 					=    8546.00 kB
+
+	Children see throughput for  5 readers 		= 2375425.34 kB/sec
+	Parent sees throughput for  5 readers 		= 1687455.71 kB/sec
+	Min throughput per process 			=  456395.66 kB/sec 
+	Max throughput per process 			=  516049.56 kB/sec
+	Avg throughput per process 			=  475085.07 kB/sec
+	Min xfer 					=    9075.00 kB
+
+	Children see throughput for 5 re-readers 	= 2120564.50 kB/sec
+	Parent sees throughput for 5 re-readers 	= 1620177.23 kB/sec
+	Min throughput per process 			=  419248.00 kB/sec 
+	Max throughput per process 			=  430850.44 kB/sec
+	Avg throughput per process 			=  424112.90 kB/sec
+	Min xfer 					=    9710.00 kB
+
+	Children see throughput for 5 reverse readers 	= 2796118.06 kB/sec
+	Parent sees throughput for 5 reverse readers 	= 1875259.38 kB/sec
+	Min throughput per process 			=  527723.75 kB/sec 
+	Max throughput per process 			=  629494.75 kB/sec
+	Avg throughput per process 			=  559223.61 kB/sec
+	Min xfer 					=    8586.00 kB
+
+	Children see throughput for 5 stride readers 	= 1241336.56 kB/sec
+	Parent sees throughput for 5 stride readers 	= 1027695.06 kB/sec
+	Min throughput per process 			=  228667.22 kB/sec 
+	Max throughput per process 			=  264592.56 kB/sec
+	Avg throughput per process 			=  248267.31 kB/sec
+	Min xfer 					=    8846.00 kB
+
+	Children see throughput for 5 random readers 	= 1166031.84 kB/sec
+	Parent sees throughput for 5 random readers 	=  960989.12 kB/sec
+	Min throughput per process 			=  218096.50 kB/sec 
+	Max throughput per process 			=  244514.58 kB/sec
+	Avg throughput per process 			=  233206.37 kB/sec
+	Min xfer 					=    9130.00 kB
+
+	Children see throughput for 5 mixed workload 	= 3187724.28 kB/sec
+	Parent sees throughput for 5 mixed workload 	=  512094.33 kB/sec
+	Min throughput per process 			=  458373.22 kB/sec 
+	Max throughput per process 			=  726239.69 kB/sec
+	Avg throughput per process 			=  637544.86 kB/sec
+	Min xfer 					=    6441.00 kB
+
+	Children see throughput for 5 random writers 	= 1925749.53 kB/sec
+	Parent sees throughput for 5 random writers 	=  127895.46 kB/sec
+	Min throughput per process 			=  369192.66 kB/sec 
+	Max throughput per process 			=  440243.94 kB/sec
+	Avg throughput per process 			=  385149.91 kB/sec
+	Min xfer 					=    8590.00 kB
+
+	Children see throughput for 5 pwrite writers 	= 1293023.53 kB/sec
+	Parent sees throughput for 5 pwrite writers 	=  287963.41 kB/sec
+	Min throughput per process 			=  231464.25 kB/sec 
+	Max throughput per process 			=  278065.53 kB/sec
+	Avg throughput per process 			=  258604.71 kB/sec
+	Min xfer 					=    8529.00 kB
+
+	Children see throughput for 5 pread readers 	= 2235045.62 kB/sec
+	Parent sees throughput for 5 pread readers 	= 1944157.99 kB/sec
+	Min throughput per process 			=  393573.00 kB/sec 
+	Max throughput per process 			=  497668.31 kB/sec
+	Avg throughput per process 			=  447009.12 kB/sec
+	Min xfer 					=    8082.00 kB
+
+	Children see throughput for  5 fwriters 	= 2262499.22 kB/sec
+	Parent sees throughput for  5 fwriters 		=  338483.41 kB/sec
+	Min throughput per process 			=  435949.62 kB/sec 
+	Max throughput per process 			=  513642.69 kB/sec
+	Avg throughput per process 			=  452499.84 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  5 freaders 	= 4191271.75 kB/sec
+	Parent sees throughput for  5 freaders 		= 3693273.53 kB/sec
+	Min throughput per process 			=  755892.62 kB/sec 
+	Max throughput per process 			=  894564.88 kB/sec
+	Avg throughput per process 			=  838254.35 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  6 initial writers 	= 1453716.70 kB/sec
+	Parent sees throughput for  6 initial writers 	=  296895.66 kB/sec
+	Min throughput per process 			=  212900.12 kB/sec 
+	Max throughput per process 			=  274053.88 kB/sec
+	Avg throughput per process 			=  242286.12 kB/sec
+	Min xfer 					=    7952.00 kB
+
+	Children see throughput for  6 rewriters 	= 2507787.44 kB/sec
+	Parent sees throughput for  6 rewriters 	=  392766.75 kB/sec
+	Min throughput per process 			=  369941.22 kB/sec 
+	Max throughput per process 			=  464126.09 kB/sec
+	Avg throughput per process 			=  417964.57 kB/sec
+	Min xfer 					=    8168.00 kB
+
+	Children see throughput for  6 readers 		= 4611929.25 kB/sec
+	Parent sees throughput for  6 readers 		= 3848185.36 kB/sec
+	Min throughput per process 			=  722353.31 kB/sec 
+	Max throughput per process 			=  865819.50 kB/sec
+	Avg throughput per process 			=  768654.88 kB/sec
+	Min xfer 					=    8536.00 kB
+
+	Children see throughput for 6 re-readers 	= 5175124.94 kB/sec
+	Parent sees throughput for 6 re-readers 	= 2916742.60 kB/sec
+	Min throughput per process 			=  797859.94 kB/sec 
+	Max throughput per process 			=  992051.25 kB/sec
+	Avg throughput per process 			=  862520.82 kB/sec
+	Min xfer 					=    8254.00 kB
+
+	Children see throughput for 6 reverse readers 	= 4965997.50 kB/sec
+	Parent sees throughput for 6 reverse readers 	= 4705041.21 kB/sec
+	Min throughput per process 			=  788321.31 kB/sec 
+	Max throughput per process 			=  902042.44 kB/sec
+	Avg throughput per process 			=  827666.25 kB/sec
+	Min xfer 					=    8934.00 kB
+
+	Children see throughput for 6 stride readers 	= 1508233.12 kB/sec
+	Parent sees throughput for 6 stride readers 	= 1431139.47 kB/sec
+	Min throughput per process 			=  236480.39 kB/sec 
+	Max throughput per process 			=  282521.25 kB/sec
+	Avg throughput per process 			=  251372.19 kB/sec
+	Min xfer 					=    8562.00 kB
+
+	Children see throughput for 6 random readers 	= 3318478.50 kB/sec
+	Parent sees throughput for 6 random readers 	= 3179210.37 kB/sec
+	Min throughput per process 			=  522165.25 kB/sec 
+	Max throughput per process 			=  608690.25 kB/sec
+	Avg throughput per process 			=  553079.75 kB/sec
+	Min xfer 					=    8788.00 kB
+
+	Children see throughput for 6 mixed workload 	= 1806842.30 kB/sec
+	Parent sees throughput for 6 mixed workload 	=  431944.37 kB/sec
+	Min throughput per process 			=  229677.05 kB/sec 
+	Max throughput per process 			=  371891.47 kB/sec
+	Avg throughput per process 			=  301140.38 kB/sec
+	Min xfer 					=    6326.00 kB
+
+	Children see throughput for 6 random writers 	= 2453260.59 kB/sec
+	Parent sees throughput for 6 random writers 	=  319639.09 kB/sec
+	Min throughput per process 			=  381235.28 kB/sec 
+	Max throughput per process 			=  462825.72 kB/sec
+	Avg throughput per process 			=  408876.77 kB/sec
+	Min xfer 					=    8415.00 kB
+
+	Children see throughput for 6 pwrite writers 	= 2572147.19 kB/sec
+	Parent sees throughput for 6 pwrite writers 	=  270684.35 kB/sec
+	Min throughput per process 			=  411314.53 kB/sec 
+	Max throughput per process 			=  487107.94 kB/sec
+	Avg throughput per process 			=  428691.20 kB/sec
+	Min xfer 					=    8640.00 kB
+
+	Children see throughput for 6 pread readers 	= 2525261.88 kB/sec
+	Parent sees throughput for 6 pread readers 	= 1756872.07 kB/sec
+	Min throughput per process 			=  392292.66 kB/sec 
+	Max throughput per process 			=  485857.09 kB/sec
+	Avg throughput per process 			=  420876.98 kB/sec
+	Min xfer 					=    8277.00 kB
+
+	Children see throughput for  6 fwriters 	= 1657457.00 kB/sec
+	Parent sees throughput for  6 fwriters 		=  365938.77 kB/sec
+	Min throughput per process 			=  267321.38 kB/sec 
+	Max throughput per process 			=  290884.84 kB/sec
+	Avg throughput per process 			=  276242.83 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  6 freaders 	= 5289667.56 kB/sec
+	Parent sees throughput for  6 freaders 		= 5060164.96 kB/sec
+	Min throughput per process 			=  867726.19 kB/sec 
+	Max throughput per process 			=  886111.94 kB/sec
+	Avg throughput per process 			=  881611.26 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  7 initial writers 	= 3138519.09 kB/sec
+	Parent sees throughput for  7 initial writers 	=  155801.09 kB/sec
+	Min throughput per process 			=  413353.47 kB/sec 
+	Max throughput per process 			=  498101.19 kB/sec
+	Avg throughput per process 			=  448359.87 kB/sec
+	Min xfer 					=    8508.00 kB
+
+	Children see throughput for  7 rewriters 	= 3293296.09 kB/sec
+	Parent sees throughput for  7 rewriters 	=  247849.61 kB/sec
+	Min throughput per process 			=  450204.78 kB/sec 
+	Max throughput per process 			=  575827.00 kB/sec
+	Avg throughput per process 			=  470470.87 kB/sec
+	Min xfer 					=    8001.00 kB
+
+	Children see throughput for  7 readers 		= 7900957.94 kB/sec
+	Parent sees throughput for  7 readers 		= 5478976.40 kB/sec
+	Min throughput per process 			= 1038406.81 kB/sec 
+	Max throughput per process 			= 1389426.12 kB/sec
+	Avg throughput per process 			= 1128708.28 kB/sec
+	Min xfer 					=    7628.00 kB
+
+	Children see throughput for 7 re-readers 	= 6046881.88 kB/sec
+	Parent sees throughput for 7 re-readers 	= 5599999.41 kB/sec
+	Min throughput per process 			=  684455.50 kB/sec 
+	Max throughput per process 			= 1056317.75 kB/sec
+	Avg throughput per process 			=  863840.27 kB/sec
+	Min xfer 					=    6603.00 kB
+
+	Children see throughput for 7 reverse readers 	= 1685137.94 kB/sec
+	Parent sees throughput for 7 reverse readers 	= 1577705.11 kB/sec
+	Min throughput per process 			=  233535.78 kB/sec 
+	Max throughput per process 			=  248404.98 kB/sec
+	Avg throughput per process 			=  240733.99 kB/sec
+	Min xfer 					=    9631.00 kB
+
+	Children see throughput for 7 stride readers 	= 3784156.44 kB/sec
+	Parent sees throughput for 7 stride readers 	= 2504817.74 kB/sec
+	Min throughput per process 			=  519505.38 kB/sec 
+	Max throughput per process 			=  628297.62 kB/sec
+	Avg throughput per process 			=  540593.78 kB/sec
+	Min xfer 					=    8470.00 kB
+
+	Children see throughput for 7 random readers 	= 4060509.06 kB/sec
+	Parent sees throughput for 7 random readers 	= 3866026.58 kB/sec
+	Min throughput per process 			=  562609.62 kB/sec 
+	Max throughput per process 			=  675545.06 kB/sec
+	Avg throughput per process 			=  580072.72 kB/sec
+	Min xfer 					=    8531.00 kB
+
+	Children see throughput for 7 mixed workload 	= 3850731.47 kB/sec
+	Parent sees throughput for 7 mixed workload 	=  650612.99 kB/sec
+	Min throughput per process 			=  414417.25 kB/sec 
+	Max throughput per process 			=  690034.38 kB/sec
+	Avg throughput per process 			=  550104.50 kB/sec
+	Min xfer 					=    6157.00 kB
+
+	Children see throughput for 7 random writers 	= 2236597.09 kB/sec
+	Parent sees throughput for 7 random writers 	=  170812.08 kB/sec
+	Min throughput per process 			=  289278.47 kB/sec 
+	Max throughput per process 			=  332487.50 kB/sec
+	Avg throughput per process 			=  319513.87 kB/sec
+	Min xfer 					=    8904.00 kB
+
+	Children see throughput for 7 pwrite writers 	= 2093764.14 kB/sec
+	Parent sees throughput for 7 pwrite writers 	=  290949.75 kB/sec
+	Min throughput per process 			=  250471.27 kB/sec 
+	Max throughput per process 			=  338883.38 kB/sec
+	Avg throughput per process 			=  299109.16 kB/sec
+	Min xfer 					=    7573.00 kB
+
+	Children see throughput for 7 pread readers 	= 7817125.12 kB/sec
+	Parent sees throughput for 7 pread readers 	= 6150406.75 kB/sec
+	Min throughput per process 			= 1056946.62 kB/sec 
+	Max throughput per process 			= 1361890.38 kB/sec
+	Avg throughput per process 			= 1116732.16 kB/sec
+	Min xfer 					=    7961.00 kB
+
+	Children see throughput for  7 fwriters 	= 1667751.06 kB/sec
+	Parent sees throughput for  7 fwriters 		=  332491.85 kB/sec
+	Min throughput per process 			=  233598.84 kB/sec 
+	Max throughput per process 			=  252752.47 kB/sec
+	Avg throughput per process 			=  238250.15 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  7 freaders 	= 7349928.44 kB/sec
+	Parent sees throughput for  7 freaders 		= 6762236.27 kB/sec
+	Min throughput per process 			= 1005404.38 kB/sec 
+	Max throughput per process 			= 1261229.75 kB/sec
+	Avg throughput per process 			= 1049989.78 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+	Each process writes a 10240 kByte file in 1 kByte records
+
+	Children see throughput for  8 initial writers 	=  829810.76 kB/sec
+	Parent sees throughput for  8 initial writers 	=  207505.39 kB/sec
+	Min throughput per process 			=   57664.80 kB/sec 
+	Max throughput per process 			=  125055.16 kB/sec
+	Avg throughput per process 			=  103726.34 kB/sec
+	Min xfer 					=    4549.00 kB
+
+	Children see throughput for  8 rewriters 	= 1840208.16 kB/sec
+	Parent sees throughput for  8 rewriters 	=  316623.87 kB/sec
+	Min throughput per process 			=  163977.33 kB/sec 
+	Max throughput per process 			=  251863.16 kB/sec
+	Avg throughput per process 			=  230026.02 kB/sec
+	Min xfer 					=    6604.00 kB
+
+	Children see throughput for  8 readers 		= 3613009.94 kB/sec
+	Parent sees throughput for  8 readers 		= 2939773.28 kB/sec
+	Min throughput per process 			=  347556.38 kB/sec 
+	Max throughput per process 			=  555989.75 kB/sec
+	Avg throughput per process 			=  451626.24 kB/sec
+	Min xfer 					=    4716.00 kB
+
+	Children see throughput for 8 re-readers 	= 2958554.54 kB/sec
+	Parent sees throughput for 8 re-readers 	= 2807986.46 kB/sec
+	Min throughput per process 			=  110659.57 kB/sec 
+	Max throughput per process 			=  414137.19 kB/sec
+	Avg throughput per process 			=  369819.32 kB/sec
+	Min xfer 					=    2748.00 kB
+
+	Children see throughput for 8 reverse readers 	= 4445709.14 kB/sec
+	Parent sees throughput for 8 reverse readers 	= 4017284.77 kB/sec
+	Min throughput per process 			=  201594.11 kB/sec 
+	Max throughput per process 			=  753836.25 kB/sec
+	Avg throughput per process 			=  555713.64 kB/sec
+	Min xfer 					=    1267.00 kB
+
+	Children see throughput for 8 stride readers 	= 4248218.03 kB/sec
+	Parent sees throughput for 8 stride readers 	= 3783995.89 kB/sec
+	Min throughput per process 			=  295729.62 kB/sec 
+	Max throughput per process 			=  585926.25 kB/sec
+	Avg throughput per process 			=  531027.25 kB/sec
+	Min xfer 					=    4872.00 kB
+
+	Children see throughput for 8 random readers 	= 2221542.82 kB/sec
+	Parent sees throughput for 8 random readers 	= 1991402.71 kB/sec
+	Min throughput per process 			=  115963.13 kB/sec 
+	Max throughput per process 			=  328540.25 kB/sec
+	Avg throughput per process 			=  277692.85 kB/sec
+	Min xfer 					=    3614.00 kB
+
+	Children see throughput for 8 mixed workload 	= 4181945.16 kB/sec
+	Parent sees throughput for 8 mixed workload 	=  526492.56 kB/sec
+	Min throughput per process 			=  374818.25 kB/sec 
+	Max throughput per process 			=  648553.38 kB/sec
+	Avg throughput per process 			=  522743.14 kB/sec
+	Min xfer 					=    5918.00 kB
+
+	Children see throughput for 8 random writers 	= 1614303.09 kB/sec
+	Parent sees throughput for 8 random writers 	=  338815.28 kB/sec
+	Min throughput per process 			=  152358.33 kB/sec 
+	Max throughput per process 			=  216660.59 kB/sec
+	Avg throughput per process 			=  201787.89 kB/sec
+	Min xfer 					=    7218.00 kB
+
+	Children see throughput for 8 pwrite writers 	= 2071257.55 kB/sec
+	Parent sees throughput for 8 pwrite writers 	=  341411.52 kB/sec
+	Min throughput per process 			=  242325.53 kB/sec 
+	Max throughput per process 			=  268251.34 kB/sec
+	Avg throughput per process 			=  258907.19 kB/sec
+	Min xfer 					=    9181.00 kB
+
+	Children see throughput for 8 pread readers 	= 3273487.62 kB/sec
+	Parent sees throughput for 8 pread readers 	= 2876536.60 kB/sec
+	Min throughput per process 			=  223214.81 kB/sec 
+	Max throughput per process 			=  509505.34 kB/sec
+	Avg throughput per process 			=  409185.95 kB/sec
+	Min xfer 					=    4496.00 kB
+
+	Children see throughput for  8 fwriters 	= 3190236.44 kB/sec
+	Parent sees throughput for  8 fwriters 		=  376280.42 kB/sec
+	Min throughput per process 			=  385541.84 kB/sec 
+	Max throughput per process 			=  455111.28 kB/sec
+	Avg throughput per process 			=  398779.55 kB/sec
+	Min xfer 					=   10240.00 kB
+
+	Children see throughput for  8 freaders 	= 3010882.31 kB/sec
+	Parent sees throughput for  8 freaders 		= 2818224.50 kB/sec
+	Min throughput per process 			=  358039.84 kB/sec 
+	Max throughput per process 			=  387175.34 kB/sec
+	Avg throughput per process 			=  376360.29 kB/sec
+	Min xfer 					=   10240.00 kB
+
+
+
+"Throughput report Y-axis is type of test X-axis is number of processes"
+"Record size = 1 kBytes "
+"Output is in kBytes/sec"
+
+"  Initial write "  700466.62   823776.44  1322342.53  1701412.00  1865573.47  1453716.70  3138519.09   829810.76 
+
+"        Rewrite "  660471.50  1229442.12  1685038.69  1078119.69  1340938.61  2507787.44  3293296.09  1840208.16 
+
+"           Read "  993887.81  2084116.31  2949586.00  1969357.44  2375425.34  4611929.25  7900957.94  3613009.94 
+
+"        Re-read "  920623.62  1826548.50  2773007.38  3581187.50  2120564.50  5175124.94  6046881.88  2958554.54 
+
+"   Reverse Read "  665156.25  1385309.12  2094222.06  2575859.56  2796118.06  4965997.50  1685137.94  4445709.14 
+
+"    Stride read "  292286.38  1413574.81  3159844.88  2777654.31  1241336.56  1508233.12  3784156.44  4248218.03 
+
+"    Random read "  609926.31  1279141.62  1955257.62   818606.19  1166031.84  3318478.50  4060509.06  2221542.82 
+
+" Mixed workload "  699018.75  1174102.59  2794301.88  3020589.56  3187724.28  1806842.30  3850731.47  4181945.16 
+
+"   Random write "  501368.94   982278.34  1482707.44  1051901.00  1925749.53  2453260.59  2236597.09  1614303.09 
+
+"         Pwrite "  578393.75  1001986.09   755068.12  1207376.00  1293023.53  2572147.19  2093764.14  2071257.55 
+
+"          Pread "  969347.81  2177204.12  2755184.56  5101290.50  2235045.62  2525261.88  7817125.12  3273487.62 
+
+"         Fwrite "  287012.69  1159880.25  1491856.19  1383324.22  2262499.22  1657457.00  1667751.06  3190236.44 
+
+"          Fread "  881456.44  1805769.25  4596274.88  1809449.12  4191271.75  5289667.56  7349928.44  3010882.31 
+
+
+iozone test complete.

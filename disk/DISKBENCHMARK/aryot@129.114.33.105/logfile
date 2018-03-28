@@ -1,0 +1,86 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.471 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov.
+
+	Run began: Sun Mar 25 08:20:06 2018
+
+	Auto Mode
+	Excel chart generation enabled
+	Include close in write timing
+	Command line used: iozone -aRcU testfile
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read   fwrite frewrite    fread  freread
+              64       4
+iozone: interrupted
+
+Excel output is below:
+
+"Writer report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Re-writer report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Reader report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Re-Reader report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Random read report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Random write report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Backward read report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Record rewrite report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Stride read report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Fwrite report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Re-Fwrite report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Fread report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+
+"Re-Fread report"
+        "4"  "8"  "16"  "32"  "64"  "128"  "256"  "512"  "1024"  "2048"  "4096"  "8192"  "16384"  "32768"  "65536"  "131072"  "262144"  "524288"  "1048576"
+"64"   0 
+exiting iozone
+

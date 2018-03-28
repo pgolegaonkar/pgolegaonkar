@@ -1,0 +1,1 @@
+/usr/bin/cc   -std=gnu11 -pthread   CMakeFiles/Server.dir/ClientServer.c.o CMakeFiles/Server.dir/Server.c.o  -o Server -rdynamic -lpthread 
